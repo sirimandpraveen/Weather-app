@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>This is the title</title>
+    <link rel="stylesheet" href="public/styles.css" >
+  </head>
+
+  <body>
+    <%- include('./partials/navbar.ejs') %>
+    <div class="main-content">
+      <%- include('./partials/header.ejs') %>
+      <p>Use this site to get your weather!</p>
+      <form>
+        <input placeholder="location" />
+        <button>Search</button>
+      </form>
+      <p id="load"></p>
+      <h2 id="message1"></h2>
+      <p id="message2"></p>
+    </div>
+    <%- include('./partials/footer.ejs') %>
+    <script src="/public/app.js"></script>
+  </body>
+</html>
